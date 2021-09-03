@@ -62,10 +62,12 @@
 ### 페이지 설명
       동별/아파트별의 실거래가를 조회하여 확인하고 지도에 표시한다.
 ### 동별 실거래가
-![캡처_2021_09_03_20_26_07_255](https://user-images.githubusercontent.com/67899393/131998112-10a7688c-9d5b-4b5b-832e-09ebb5c42eb7.png)
+
+![화면_캡처_2021-09-03_203301](https://lab.ssafy.com/anvo930524/hw/uploads/48471ca6bcfdfb103ba219548df978ae/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2021-09-03_203245.png)
 
 ## 아파트별 실거래가
-![캡처_2021_09_03_20_26_14_987](https://user-images.githubusercontent.com/67899393/131998195-23321355-a037-497c-9c4b-473259a84c2d.png)
+
+![화면_캡처_2021-09-03_203301](https://lab.ssafy.com/anvo930524/hw/uploads/d09f0a0eb2cc47397d10c925e68dc59c/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2021-09-03_203301.png)
 
 ## 4. 추가 기능
 ### 관심지역 등록
