@@ -36,7 +36,7 @@
 ## 회원정보 확인
 ![캡처_2021_09_03_19_43_39_359](https://user-images.githubusercontent.com/67899393/131993412-e0f43a75-ea60-4ad6-bb41-dc82a581d78b.png)
 
-## 회원정보 수정 회원 탈퇴
+## 회원정보 수정 / 회원 탈퇴
 ![캡처_2021_09_03_19_43_44_210](https://user-images.githubusercontent.com/67899393/131993443-e8689e7d-2326-4bd4-bc99-70fd09910849.png)
 
 
