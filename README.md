@@ -20,6 +20,7 @@
 |기본|아파트별 실거래가 조회 결과 페이지|⭕️|
 |기본|회원정보 등록, 수정, 삭제, 조회 페이지|⭕️|
 |기본|로그인 / 로그아웃 페이지|⭕️|
+|추가|관심지역 목록|⭕️|
 |추가|관심지역 등록|⭕️|
 |추가|비밀번호 찾기|⭕️|
 <br>
@@ -36,8 +37,8 @@
 ![캡처_2021_09_03_19_53_12_569](https://user-images.githubusercontent.com/67899393/131994585-f8e5e23a-8256-41b0-9e7b-24d83b0f0aae.png)
 
 ### 로그인 시 화면
-       로그인 하면 Login 버튼은 사라지고  Logout, 회원 정보, 관심지역 등록 버튼이 나타난다.
-![캡처_2021_09_03_19_53_15_818](https://user-images.githubusercontent.com/67899393/131994609-b407c5e9-ae0d-43fa-9dce-cb81c85aa608.png)
+       로그인 하면 Login 버튼은 사라지고  Logout, 회원 정보, 관심지역 버튼이 나타난다.
+![캡처_2021_09_03_22_20_01_636](https://user-images.githubusercontent.com/67899393/132011976-ce04add1-a58f-439e-857f-d916212ac2f9.png)
 
 ## 2. 회원정보 페이지
 ### 페이지 설명
@@ -50,11 +51,11 @@
 
 ### 회원정보 확인
        자신의 아이디, 비밀번호, 이름, 주소, 전화 번호를 확인 하는 페이지
-![캡처_2021_09_03_19_53_45_352](https://user-images.githubusercontent.com/67899393/131994665-54b3cb3d-2bd8-4ea6-9fc6-0d3b1cfead40.png)
+![캡처_2021_09_03_22_20_09_119](https://user-images.githubusercontent.com/67899393/132012026-aaefd833-1d65-4045-9903-7654b5f57a3b.png)
 
 ### 회원정보 수정 / 회원 탈퇴
        자신의 아이디, 비밀번호, 이름, 주소, 전화 번호를 수정하거나 회원 탈퇴를 하는 페이지
-![캡처_2021_09_03_19_53_49_750](https://user-images.githubusercontent.com/67899393/131994697-0184d24e-d662-4f7b-abe0-2f2b03ffb989.png)
+![캡처_2021_09_03_22_20_12_143](https://user-images.githubusercontent.com/67899393/132012056-e79b27a4-ea40-4319-bd8f-767503fde3d7.png)
 
 
 
@@ -70,10 +71,15 @@
 ![화면_캡처_2021-09-03_203301](https://lab.ssafy.com/anvo930524/hw/uploads/d09f0a0eb2cc47397d10c925e68dc59c/%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2021-09-03_203301.png)
 
 ## 4. 추가 기능
+### 관심지역 목록
+      관심지역으로 등록한 지역들을 보여준다.
+
+![캡처_2021_09_03_22_20_54_244](https://user-images.githubusercontent.com/67899393/132012177-96f186d7-9708-48d6-9b8b-ccee33a4f2e0.png)
+
 ### 관심지역 등록
       도/광역시 , 구 , 동을 선택하여 관심지역으로 등록한다.
 
-![캡처_2021_09_03_20_20_12_653](https://user-images.githubusercontent.com/67899393/131997435-b25757d6-2c6b-47be-b899-089f88d9d624.png)
+![캡처_2021_09_03_22_20_58_32](https://user-images.githubusercontent.com/67899393/132012202-a278f0eb-cecb-473f-bda7-3563a716e0e7.png)
 
 
 ### 비밀번호 찾기 페이지
