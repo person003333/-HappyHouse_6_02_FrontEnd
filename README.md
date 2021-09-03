@@ -36,11 +36,9 @@
 ## 회원정보 확인
 ![캡처_2021_09_03_19_43_39_359](https://user-images.githubusercontent.com/67899393/131993412-e0f43a75-ea60-4ad6-bb41-dc82a581d78b.png)
 
-## 회원정보 수정
+## 회원정보 수정 회원 탈퇴
 ![캡처_2021_09_03_19_43_44_210](https://user-images.githubusercontent.com/67899393/131993443-e8689e7d-2326-4bd4-bc99-70fd09910849.png)
 
-## 회원 탈퇴
-![캡처_2021_09_03_19_43_49_25](https://user-images.githubusercontent.com/67899393/131993471-29d97009-a483-40f7-b03a-d31d2a3d6698.png)
 
 ## 비밀번호 찾기 페이지
 ![캡처_2021_09_03_19_43_28_235](https://user-images.githubusercontent.com/67899393/131993311-295c9682-5295-4df0-bfe3-17e1b5549ff5.png)
