@@ -19,8 +19,19 @@
      로그인 하였을 경우 추가적으로 로그아웃, 회원 정보, 관심지역 등록 버튼이 나타난다.
 ![image](https://user-images.githubusercontent.com/67899393/131991186-d1ce444a-111f-42e1-a6e3-fa471dad932f.png)
 
-## 로그인 화면
+### 로그인 화면
 ![image](https://user-images.githubusercontent.com/67899393/131991322-50cebe68-3371-4895-bd7f-aab8ed19d664.png)
 
-## 로그인 시 화면
+### 로그인 시 화면
 ![image](https://user-images.githubusercontent.com/67899393/131991413-de48ea82-960f-40e9-af15-c8077dbeaf55.png)
+
+## 2. 회원정보 페이지
+### 페이지 설명
+     회원가입, 회원정보 확인, 회원정보 수정, 회원 탈퇴, 비밀번호 찾기 페이지
+##회원가입
+![image](https://user-images.githubusercontent.com/67899393/131992775-c4b96d8e-eeed-46ba-b766-3441b48d0209.png)
+##회원정보 확인
+##회원정보 수정
+##회원 탈퇴
+##비밀번호 찾기 페이지
+![image](https://user-images.githubusercontent.com/67899393/131992860-46d2fab2-060a-4cb1-9aff-7ba84e2eb323.png)
