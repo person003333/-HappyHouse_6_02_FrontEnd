@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Happy House</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item inVaild"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Login</a></li>
+                        <li class="nav-item vaild"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">Logout</a></li>
+                        <li class="nav-item vaild"><a class="nav-link px-lg-3 py-3 py-lg-4" href="">회원정보</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Happy House</h1>
+                            <span class="subheading">Searching My Happy House</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="search-sec">
+                <div class="container">
+                    <form action="#" method="post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                            <option>도/광역시</option>
+                                            <option>서울특별시</option>
+                                            <option>경기도</option>
+                                            <option>부산광역시</option>
+                                            <option>인천광역시</option>
+                                            <option>대전광역시</option>
+                                            <option>세종시</option>
+                                            <option>광주광역시</option>
+                                            <option>울산광역시</option>
+                                            <option>대구광역시</option>
+                                            <option>충청남도</option>
+                                            <option>충청북도</option>
+                                            <option>전라남도</option>
+                                            <option>전라북도</option>
+                                            <option>강원도</option>
+                                            <option>경상북도</option>
+                                            <option>경상남도</option>
+                                            <option>제주도</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect2">
+                                            <option>구/시/군</option>
+                                            <option>도봉구</option>
+                                            <option>은평구</option>
+                                            <option>동작구</option>
+                                            <option>금천구</option>
+                                            <option>구로구</option>
+                                            <option>종로구</option>
+                                            <option>강북구</option>
+                                            <option>중랑구</option>
+                                            <option>강남구</option>
+                                            <option>강서구</option>
+                                            <option>중구</option>
+                                            <option>강동구</option>
+                                            <option>광진구</option>
+                                            <option>마포구</option>
+                                            <option>서초구</option>
+                                            <option>성북구</option>
+                                            <option>노원구</option>
+                                            <option>송파구</option>
+                                            <option>서대문구</option>
+                                            <option>양천구</option>
+                                            <option>영등포구</option>
+                                            <option>관악구</option>
+                                            <option>성동구</option>
+                                            <option>용산구</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect3">
+                                            <option>동</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                        <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </header>
+
+        <!-- 카카오 맵 -->
+        <div class="container px-4 px-lg-5" id="map" style="width:1200px;height:500px;"></div>
+	    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c1fe7d49bf408b3eec39aecd8fcfb0e2"></script>
+        <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+            var zoomControl = new kakao.maps.ZoomControl();
+            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        </script>
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; SSAFY 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
