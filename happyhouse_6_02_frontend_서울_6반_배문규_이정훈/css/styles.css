@@ -10,6 +10,23 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .box {
+  display: block;
+  width: 100%;
+  height: 51px;
+  border: solid 1px #dadada;
+  padding: 10px 14px 10px 14px;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+}
+ #signup-content{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 460px;
+ }
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11025,7 +11042,6 @@ blockquote {
 }
 
 #mainNav {
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -11049,57 +11065,7 @@ blockquote {
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
-@media (min-width: 992px) {
-  #mainNav {
-    border-bottom: 1px solid transparent;
-    background: transparent;
-  }
-  #mainNav .navbar-brand {
-    color: #fff;
-  }
-  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    color: #fff;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-}
-@media (min-width: 992px) {
-  #mainNav {
-    transition: background-color 0.2s;
-    /* Force Hardware Acceleration in WebKit */
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  #mainNav.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -83px;
-    transition: transform 0.2s;
-    border-bottom: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  #mainNav.is-fixed .navbar-brand {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #212529;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
-  }
-  #mainNav.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    transform: translate3d(0, 100%, 0);
-  }
-}
+
 
 footer {
   padding-top: 3rem;
@@ -11235,3 +11201,93 @@ header.masthead .site-heading .h1 {
     font-size: 2.25rem;
   }
 }
+
+
+/* 여기서 부터는 새로 추가된 부분 */
+
+.search-sec{
+  padding: 2rem;
+}
+.search-slt{
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  height: calc(3rem + 2px) !important;
+  border-radius:0;
+}
+.wrn-btn{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  height: calc(3rem + 2px) !important;
+  border-radius:0;
+}
+@media (min-width: 992px){
+  .search-sec{
+      position: relative;
+      top: 80px;
+  }
+}
+
+header.searchhead {
+  position: relative;
+}
+@media (min-width: 992px) {
+  header.searchhead {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.first {
+  border: 1px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.second{
+  border: 1px;
+  float: left;
+  margin-left: 1%;
+  width:30%;
+  box-sizing: border-box;
+}
+
+.third{
+  border: 1px;
+  float: left;
+  margin-left: 1%;
+  width:30%;
+  box-sizing: border-box;
+}
+
+.fourth{
+  border: 1px;
+  float: right;
+  margin-left: 1%;
+  width:30%;
+  box-sizing: border-box;
+}
+
+.map{
+  border: 1px;
+  float: left;
+  margin-left: 1%;
+  width:30%;
+  box-sizing: border-box;
+}
+
+table {
+  width: 400px;
+}
+td {
+  padding: 20px;
+}
+.line{border-bottom: 1px solid black;}
