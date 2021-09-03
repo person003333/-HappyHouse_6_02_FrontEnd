@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+
+                $(".log_on").hide();
+                $("#Login").click(function(){
+                    $(".btn-group").toggle();
+                })
+                $("#login_btn").click(function(){
+                    $(".log_on").show();
+                    $(".log_off").hide();
+                    $(".btn-group").hide();
+                })
+                $("#logout_btn").click(function(){
+                    $(".log_off").show();
+                    $(".log_on").hide();
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Happy House</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item inVaild log_off"><a class="nav-link px-lg-3 py-3 py-lg-4" id="Login">Login</a></li>
+                        <div class="btn-group show" style="display: none;"> 
+                            <ul class="dropdown-menu dropdown-menu-right dropdown-animation show" aria-labelledby="header-top-drop-2">
+                                <li>
+                                    <form class="login-form margin-clear" action="/login.do" method="post">
+                                        <div class="form-group has-feedback">
+                                            <i class="fa fa-user form-control-feedback"></i>
+                                            <label class="control-label">아 이 디</label> <input type="text" class="form-control" placeholder="" name="id">
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <i class="fa fa-lock form-control-feedback"></i>
+                                            <label class="control-label">비밀번호</label> <input type="password" class="form-control" placeholder="" name="pw"> 
+                                        </div>
+                                        <button type="button" class="btn btn-gray btn-sm" id="login_btn">    로 그 인</button>
+                                         
+                                        <ul class="pagination">	
+                                            <li><a class="btn btn-default btn-sm" data-bs-toggle="modal" data-bs-target="#sign_up_Modal"> 회원가입</a></li>
+                                            <li><a class="btn btn-default btn-sm" data-bs-toggle="modal" data-bs-target="#serach_password_Modal">비밀번호
+                                                    찾기</a></li>
+                                        </ul>
+                                         
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <li class="nav-item vaild log_on"><a class="nav-link px-lg-3 py-3 py-lg-4" id="logout_btn">Logout</a></li>
+                        <li class="nav-item vaild log_on"><a class="nav-link px-lg-3 py-3 py-lg-4" data-bs-toggle="modal" data-bs-target="#profile_Modal" >회원정보</a></li>
+                        <li class="nav-item vaild log_on"><a class="nav-link px-lg-3 py-3 py-lg-4" href="./favority.html" >관심지역</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Page Header-->
+        <header class="searchhead">
+            
+            <section class="search-sec">
+                <div class="container">
+                    <form action="#" method="post" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12 p-0 first">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                            <option>음식</option>
+                                            
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-12 p-0 second">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect2">
+                                            <option>커피점/카페</option>
+                                            
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-12 p-0 third">
+                                        <select class="form-control search-slt" id="exampleFormControlSelect3">
+                                            <option>커피전문점/카페/다방</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-12 p-0 fourth">
+                                        <button type="button" class="btn btn-danger wrn-btn" onclick="location.href='./search_apt.html'">Search</button>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </header>
+        
+        <!-- 카카오 맵 -->
+        <div class="container-fluid" style="margin-bottom: 100px;">
+            <div class="row">
+                <div style="width:500px; height:500px; margin-left: 300px;">
+                    <table border="0">
+                        <tr class="line">
+                            <td><h1>관심지역 목록</h1></td>
+                        </tr>
+
+
+                        <tr class="line">
+                            <td>
+                                <h3>궁동 / 구로구</h3>
+                                <a class="btn btn-default btn-sm" style="color: cornflowerblue;">
+                                    <i class="fa fa-user form-control-feedback"></i>
+                                    메인으로 변경</a>
+                                <a class="btn btn-default btn-sm" style="color: cornflowerblue;">
+                                    <i class="fa fa-user form-control-feedback"></i>
+                                    삭제</a>
+                            </td>
+                        </tr>
+                        <tr class="line">
+                            <td>
+                                <h3>북창동 / 중구</h3>
+                                <a class="btn btn-default btn-sm" style="color: cornflowerblue;">
+                                    <i class="fa fa-user form-control-feedback"></i>
+                                    메인으로 변경</a>
+                                <a class="btn btn-default btn-sm" style="color: cornflowerblue;">
+                                    <i class="fa fa-user form-control-feedback"></i>
+                                    삭제</a>
+                            </td>
+                        </tr>
+
+                        <tr class="line">
+                            <td>
+                                <h3>창성동 / 종로구</h3>
+                                <a class="btn btn-default btn-sm" style="color: cornflowerblue;">
+                                    <i class="fa fa-user form-control-feedback"></i>
+                                    메인으로 변경</a>
+                                <a class="btn btn-default btn-sm" style="color: cornflowerblue;">
+                                    <i class="fa fa-user form-control-feedback"></i>
+                                    삭제</a>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <button type="button" class="btn btn-dark wrn-btn" data-bs-toggle="modal" data-bs-target="#area_register_Modal" >관심지역 등록</ㅠclass>
+                </div>
+
+                <div id="map" style="width:800px; height:650px;"></div>
+
+            </div>
+        </div>
+
+	    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c1fe7d49bf408b3eec39aecd8fcfb0e2"></script>
+        <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+            var zoomControl = new kakao.maps.ZoomControl();
+            map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        </script>
+
+
+        <!--회원 가입 페이지-->
+        <div class="modal fade" id="sign_up_Modal" tabindex="-1" aria-labelledby="sign_up_Modal" aria-hidden="true">
+            <div class="modal-dialog modal-xl" >
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">회원 가입</h2>-->
+                        <article class="container">
+                            <div class="page-header">
+                                <div class="col-md-12 col-md-offset-3">
+                                <h3>회원가입</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-md-offset-3">
+                                <form role="form">
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputID">아이디</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="text" class="form-control" id="inputID" placeholder="아이디를 입력해 주세요">
+                                        
+                                    </div>
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputPassword">비밀번호</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="비밀번호를 입력해주세요">
+                                    </div>
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputName">이름</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="test" class="form-control" id="inputName" placeholder="이름을 입력해 주세요">
+                                    </div>
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="InputEmail">주소</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="text" class="form-control" id="InputAdress" placeholder="주소를 입력해주세요">
+                                    </div>
+                                    
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputMobile">전화 번호</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="tel" class="form-control" id="inputMobile" placeholder="전화번호를 입력해 주세요">
+                                    </div>
+ 
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="join-submit" class="btn btn-primary">
+                                            회원가입<i class="fa fa-check spaceLeft"></i>
+                                        </button>
+                                        <button type="submit" class="btn btn-warning">
+                                            가입취소<i class="fa fa-times spaceLeft"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                
+                        </article>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--회원 정보 페이지-->
+        <div class="portfolio-modal modal fade" id="profile_Modal" tabindex="-1" aria-labelledby="profile_Modal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">회원 가입</h2>-->
+                        <article class="container">
+                            <div class="page-header">
+                                <div class="col-md-12 col-md-offset-3">
+                                <h3>회원정보</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-md-offset-3">
+                                <form role="form">
+                                    <div class="form-group p-1" style="text-align: left;">
+                                        <label for="inputID">아이디</label>
+                                        <div style="border: 1px solid black; height: 30px; width: auto;" id="userID">test</div>
+                                        
+                                    </div>
+                                    <div class="form-group p-1" style="text-align: left;">
+                                        <label for="inputPassword">비밀번호</label>
+                                        <div style="border: 1px solid black; height: 30px; width: auto;" id="userID">*******</div>
+                                    </div>
+                                    <div class="form-group p-1" style="text-align: left;">
+                                        <label for="inputName">이름</label>
+                                        <div style="border: 1px solid black; height: 30px; width: auto;" id="userID">admin</div>
+                                    </div>
+                                    <div class="form-group p-1" style="text-align: left;">
+                                        <label for="InputEmail">주소</label>
+                                        <div style="border: 1px solid black; height: 30px; width: auto;" id="userID">서울시 00구 --동</div>
+                                    </div>
+                                    
+                                    <div class="form-group p-1" style="text-align: left;">
+                                        <label for="inputMobile">전화 번호</label>
+                                        <div style="border: 1px solid black; height: 30px; width: auto;" id="userID">010-0000-0000</div>
+                                    </div>
+ 
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="join-submit" class="btn btn-primary">
+                                            확인<i class="fa fa-check spaceLeft"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#profile_modify_Modal" class="btn btn-warning">
+                                            회원정보 수정<i class="fa fa-times spaceLeft"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                
+                        </article>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--회원 정보 수정 페이지-->
+        <div class="portfolio-modal modal fade" id="profile_modify_Modal" tabindex="-1" aria-labelledby="profile_modify_Modal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">회원 가입</h2>-->
+                        <article class="container">
+                            <div class="page-header">
+                                <div class="col-md-12 col-md-offset-3">
+                                <h3>회원정보 수정</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-md-offset-3">
+                                <form role="form">
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputID">아이디</label>
+                                        <input type="text" class="form-control" id="inputID" placeholder="아이디를 입력해 주세요" value="test">
+                                    </div>
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputPassword">비밀번호</label>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="비밀번호를 입력해주세요" value="1234">
+                                    </div>
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputName">이름</label>
+                                        <input type="test" class="form-control" id="inputName" placeholder="이름을 입력해 주세요" value="admin">
+                                    </div>
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="InputEmail">주소</label>
+                                        <input type="text" class="form-control" id="InputAdress" placeholder="주소를 입력해주세요" value="서울시 00구 --동">
+                                    </div>
+                                    
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputMobile">전화 번호</label>
+                                        <input type="tel" class="form-control" id="inputMobile" placeholder="전화번호를 입력해 주세요" value="010-0000-0000">
+                                    </div>
+ 
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="join-submit" class="btn btn-primary">
+                                            회원정보 수정<i class="fa fa-check spaceLeft"></i>
+                                        </button>
+                                        <button type="submit" class="btn btn-warning">
+                                            회원 탈퇴<i class="fa fa-times spaceLeft"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                
+                        </article>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--비밀 번호 찾기 페이지-->
+        
+        <div class="modal fade" id="serach_password_Modal" tabindex="-1" aria-labelledby="serach_password_Modal" aria-hidden="true">
+            <div class="modal-dialog modal-xl" >
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">회원 가입</h2>-->
+                        <article class="container">
+                            <div class="page-header">
+                                <div class="col-md-12 col-md-offset-3">
+                                <h3>비밀번호 찾기</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-md-offset-3">
+                                <form role="form">
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputID">아이디</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="text" class="form-control" id="inputID" placeholder="아이디를 입력해 주세요">
+                                    </div>
+                                  
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputName">이름</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="test" class="form-control" id="inputName" placeholder="이름을 입력해 주세요">
+                                    </div>
+                                    
+                                    <div class="form-group" style="text-align: left;">
+                                        <label for="inputMobile">전화 번호</label>
+                                        <span class="text-danger small">*</span>
+                                        <input type="tel" class="form-control" id="inputMobile" placeholder="전화번호를 입력해 주세요">
+                                    </div>
+ 
+                                    <div class="form-group text-center">
+                                        <button type="submit" id="join-submit" class="btn btn-primary">
+                                            비밀번호 찾기<i class="fa fa-check spaceLeft"></i>
+                                        </button>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                
+                        </article>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--관심 지역 등록 페이지-->
+        
+        <div class="modal fade" id="area_register_Modal" tabindex="-1" aria-labelledby="area_register_Modal" aria-hidden="true">
+            <div class="modal-dialog modal-xl" >
+                <div class="modal-content" style="border-radius: 10px;">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">회원 가입</h2>-->
+                        <article class="container">
+                            <div class="page-header">
+                                <div class="col-md-12 col-md-offset-3">
+                                <h3>관심지역 등록</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <span>
+                                    관심지역 설정
+                                    <span class="text-danger small">*</span>
+                                </span>
+                            </div>
+                            <section class="p-lg-3">
+                                <div class="container">
+                                    <form action="#" method="post" novalidate="novalidate">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-12 p-0 first">
+                                                        <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                                            <option>도/광역시</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                
+                                                    <div class="col-md-4 col-sm-12 p-0 second">
+                                                        <select class="form-control search-slt" id="exampleFormControlSelect2">
+                                                            <option>시/군/구</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                
+                                                    <div class="col-md-3 col-sm-12 p-0 third">
+                                                        <select class="form-control search-slt" id="exampleFormControlSelect3">
+                                                            <option>동</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="my-3">
+                                            <button type="submit" class="btn btn-warning">
+                                                취소<i class="fa fa-times spaceLeft"></i>
+                                            </button>
+                                            <button type="submit" id="join-submit" class="btn btn-primary">
+                                                등록<i class="fa fa-check spaceLeft"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>                    
+                        </article>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; SSAFY 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+<!--관심 지역 등록 페이지-->
+        
+<div class="modal fade" id="area_register_Modal" tabindex="-1" aria-labelledby="area_register_Modal" aria-hidden="true">
+    <div class="modal-dialog modal-xl" >
+        <div class="modal-content" style="border-radius: 10px;">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">회원 가입</h2>-->
+                <article class="container">
+                    <div class="page-header">
+                        <div class="col-md-12 col-md-offset-3">
+                        <h3>관심지역 등록</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-md-offset-3">
+                        <section class="search-sec">
+                            <div class="container">
+                                <form action="#" method="post" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="row">
+            
+                                                <div class="col-md-3 col-sm-12 p-0 first">
+                                                    <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                                        <option>도/광역시</option>
+                                                    </select>
+                                                </div>
+            
+                                                <div class="col-md-3 col-sm-12 p-0 second">
+                                                    <select class="form-control search-slt" id="exampleFormControlSelect2">
+                                                        <option>구/시/군</option>
+                                                    </select>
+                                                </div>
+            
+                                                <div class="col-md-3 col-sm-12 p-0 third">
+                                                    <select class="form-control search-slt" id="exampleFormControlSelect3">
+                                                        <option>동</option>
+                                                    </select>
+                                                </div>
+            
+                                                <div class="col-md-2 col-sm-12 p-0 fourth">
+                                                    <button type="button" class="btn btn-danger wrn-btn" onclick="location.href='./search.html'">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                        
+                    </div>
+        
+                </article>
+        
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
